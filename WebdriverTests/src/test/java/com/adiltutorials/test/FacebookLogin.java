@@ -38,7 +38,7 @@ public class FacebookLogin {
 	public void loadPage(){
 		driver.navigate().to("http://www.facebook.com");
 		AssertJUnit.assertEquals(driver.getTitle(), "Facebook - Log In or Sign Up");
-		System.out.println(driver.getTitle());
+		System.out.print(driver.getTitle());
 	}
   @Test(groups={"p2", "fillingFields"}, dependsOnMethods = "loadPage")
   public void logingtest() {
