@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="2" failed="0" total="2" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="22" started-at="2016-03-14T10:07:32Z" finished-at="2016-03-14T10:07:32Z">
+    <groups>
+      <group name="p1">
+        <method signature="FacebookLogin.loadPage()[pri:0, instance:com.adiltutorials.test.FacebookLogin@75bd9247]" name="loadPage" class="com.adiltutorials.test.FacebookLogin"/>
+      </group> <!-- p1 -->
+      <group name="p2">
+        <method signature="FacebookLogin.logingtest()[pri:0, instance:com.adiltutorials.test.FacebookLogin@75bd9247]" name="logingtest" class="com.adiltutorials.test.FacebookLogin"/>
+      </group> <!-- p2 -->
+      <group name="fillingFields">
+        <method signature="FacebookLogin.logingtest()[pri:0, instance:com.adiltutorials.test.FacebookLogin@75bd9247]" name="logingtest" class="com.adiltutorials.test.FacebookLogin"/>
+      </group> <!-- fillingFields -->
+    </groups>
+    <test name="Default test" duration-ms="22" started-at="2016-03-14T10:07:32Z" finished-at="2016-03-14T10:07:32Z">
+      <class name="com.adiltutorials.test.FacebookLogin">
+        <test-method status="FAIL" signature="setDriver(java.lang.String)[pri:0, instance:com.adiltutorials.test.FacebookLogin@75bd9247]" name="setDriver" is-config="true" duration-ms="0" started-at="2016-03-14T03:07:32Z" finished-at="2016-03-14T03:07:32Z">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'browser' is required by @Configuration on method setDriver but has not been marked @Optional or defined
+in /private/var/folders/7l/7g6bflf92x7cmm7c1zxcpl180000gn/T/testng-eclipse-1462195960/testng-customsuite.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'browser' is required by @Configuration on method setDriver but has not been marked @Optional or defined
+in /private/var/folders/7l/7g6bflf92x7cmm7c1zxcpl180000gn/T/testng-eclipse-1462195960/testng-customsuite.xml
+	at org.testng.internal.Parameters.createParameters(Parameters.java:155)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:355)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:86)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:199)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:175)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:107)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:207)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:178)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setDriver -->
+        <test-method status="SKIP" signature="loadPage()[pri:0, instance:com.adiltutorials.test.FacebookLogin@75bd9247]" name="loadPage" duration-ms="3" started-at="2016-03-14T03:07:32Z" finished-at="2016-03-14T03:07:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loadPage -->
+        <test-method status="SKIP" signature="logingtest()[pri:0, instance:com.adiltutorials.test.FacebookLogin@75bd9247]" name="logingtest" duration-ms="0" started-at="2016-03-14T03:07:32Z" depends-on-methods="com.adiltutorials.test.FacebookLogin.loadPage" finished-at="2016-03-14T03:07:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logingtest -->
+        <test-method status="FAIL" signature="tearDown()[pri:0, instance:com.adiltutorials.test.FacebookLogin@75bd9247]" name="tearDown" is-config="true" duration-ms="0" started-at="2016-03-14T03:07:32Z" finished-at="2016-03-14T03:07:32Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at com.adiltutorials.test.FacebookLogin.tearDown(FacebookLogin.java:34)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
+	at org.testng.internal.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:225)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:114)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:207)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:178)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.adiltutorials.test.FacebookLogin -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

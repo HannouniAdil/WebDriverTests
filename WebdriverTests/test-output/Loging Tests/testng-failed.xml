@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Loging Tests]">
+  <parameter name="browser" value="chrome"/>
+  <test name="P2 Test(failed)">
+    <groups>
+      <run>
+        <include name="p2"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.adiltutorials.test.FacebookLogin">
+        <methods>
+          <include name="logingtest"/>
+          <include name="setDriver"/>
+          <include name="tearDown"/>
+          <include name="setDriver"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.adiltutorials.test.FacebookLogin -->
+    </classes>
+  </test> <!-- P2 Test(failed) -->
+</suite> <!-- Failed suite [Loging Tests] -->
