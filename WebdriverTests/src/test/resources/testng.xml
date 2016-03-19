@@ -10,7 +10,7 @@
 			</run>
 		</groups>
 		<classes>
-			<class name="com.adiltutorials.test.FacebookLogin"></class>
+			<class name="com.adiltutorials.test.FacebookLoginTest"></class>
 		</classes>
 	</test>
 	<test name="P2 Test">
@@ -20,7 +20,7 @@
 			</run>
 		</groups>
 		<classes>
-			<class name="com.adiltutorials.test.FacebookLogin"></class>
+			<class name="com.adiltutorials.test.FacebookLoginTest"></class>
 		</classes>
 	</test>
 </suite>

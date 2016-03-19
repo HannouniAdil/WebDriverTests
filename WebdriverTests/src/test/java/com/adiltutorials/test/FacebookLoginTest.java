@@ -1,13 +1,14 @@
 package com.adiltutorials.test;
 
-import org.testng.annotations.Test;
-import org.testng.annotations.BeforeClass;
-import org.testng.AssertJUnit;
-import org.openqa.selenium.*;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.PageFactory;
-import org.testng.annotations.*;
+import org.testng.AssertJUnit;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Parameters;
+import org.testng.annotations.Test;
 
 import com.adiltutorials.po.FacebookMainPage;
 
@@ -27,7 +28,7 @@ public class FacebookLoginTest {
 		 }
 		 else if(br.equalsIgnoreCase("chrome")){
 			 
-			 System.setProperty("webdriver.chrome.driver", "/Users/adil/workspace/WebdriverTests/src/main/resources/chromedriver");
+			 System.setProperty("webdriver.chrome.driver", "/WebdriverTests/lib/chromedriver");
 			 this.driver = new ChromeDriver();
 		 }
 		 

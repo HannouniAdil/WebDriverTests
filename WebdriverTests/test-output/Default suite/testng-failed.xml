@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.adiltutorials.test.FacebookLogin">
+      <class name="com.adiltutorials.test.FacebookLoginTest">
         <methods>
           <include name="loadPage"/>
           <include name="logingtest"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- com.adiltutorials.test.FacebookLogin -->
+      </class> <!-- com.adiltutorials.test.FacebookLoginTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -1,15 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]">
-  <test name="Default test(failed)">
+<suite name="Failed suite [Loging Tests]">
+  <parameter name="browser" value="chrome"/>
+  <test name="P1 Test(failed)">
+    <groups>
+      <run>
+        <include name="p1"/>
+      </run>
+    </groups>
     <classes>
-      <class name="com.adiltutorials.test.FacebookLogin">
+      <class name="com.adiltutorials.test.FacebookLoginTest">
+        <methods>
+          <include name="loadPage"/>
+          <include name="setDriver"/>
+          <include name="tearDown"/>
+          <include name="setDriver"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.adiltutorials.test.FacebookLoginTest -->
+    </classes>
+  </test> <!-- P1 Test(failed) -->
+  <test name="P2 Test(failed)">
+    <groups>
+      <run>
+        <include name="p2"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.adiltutorials.test.FacebookLoginTest">
         <methods>
           <include name="loadPage"/>
           <include name="logingtest"/>
+          <include name="setDriver"/>
+          <include name="tearDown"/>
+          <include name="setDriver"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- com.adiltutorials.test.FacebookLogin -->
+      </class> <!-- com.adiltutorials.test.FacebookLoginTest -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- P2 Test(failed) -->
+</suite> <!-- Failed suite [Loging Tests] -->
